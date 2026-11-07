@@ -1,0 +1,300 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #04602d;
+  color: white;
+  cursor: pointer;
+}
+
+/* 2ndpart.css */
+.heros{
+  width : 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero{
+  width:100%;
+  height:500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.hero-content{
+  display:flex;
+  justify-content:flex-start;
+  flex-direction:column;
+  align-items:center;
+}
+.quote-btn{
+  background-color: green;
+  border-radius:10px;
+  padding: 15px 30px;
+}
+.projects-btn{
+  border-radius:10px;
+  padding: 15px 30px;
+}
+.h1{
+  color: rgb(89, 218, 89);
+}
+.h3{
+  color: goldenrod;
+}
+.forbuttons{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.hero-content p{
+  color:white;
+}
+
+/* 3rdpart.css */
+.outermaindiv {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 25px 0;
+}
+.feature {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.icon {
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 3px;
+    border-radius: 100%;
+}
+.feature-text {
+    max-width: 280px;
+}
+.feature-text h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+}
+.feature-text p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: left;
+}
+/*.outermaindiv{
+    display:flex;
+    gap:0px;
+    background-color: white;
+}
+.feature {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.h3{
+     text-align: center;
+}
+.feature-text{
+     max-width: 300px;
+}*/
+
+/* solarcaluculator.css */
+.mainone{
+    display:flex;
+    width:100%;
+    background-color: white;
+    margin-top:0px;
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Rightside{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex-start;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.leftside button{
+  color: white;
+  background-color: green;
+  height: 30px;
+  width:150px;
+}
+.cal{
+    color: green;
+}
+.leftside p{
+    color: black;
+}
+.Rightside{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+}
+.Rightside div{
+    color: green;
+
+}
+.Rightside icon{
+    height:1900px;
+    width:20px;
+}
+
+/* Services.css */
+.img img{
+    height:150px;
+    width:150px;
+}
+.parent{
+    display:flex;
+}
+.mainones{
+    background-color: white;
+}
+.mainones h3,p{
+    color: black;
+}
+.p{
+    color: green;
+    font-weight:30px;
+}
+.parent{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+/* Trust.css */
+.body{
+    background-color: white;
+}
+.mainone img{
+    height: 300px;
+    width: 400px;
+}
+.mainone{
+    margin-top: 0px;
+}
+.parent{
+    display: flex;
+    background-color: white;
+    gap:20px;
+    justify-content:flex-start;
+}
+.matter ul{
+    color: black;
+    margin-right:40px;
+}
+.matter{
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* process.css */
+.body{
+    background-color: white;
+}
+.workflow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+}
+.mainones h2{
+    color: green;
+    font-weight: 50px;
+}
+.footerclass{
+    display: flex;
+    gap: 200px;
+}
+.lastone{
+    justify-content: center;
+}
+.features h4{
+    color: black;
+    font-weight: 20px;
+}
+.services{
+    margin-top: 60px;
+}
+.caluculator{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+.Rightside{
+    margin-left: 150px;
+}
+.leftside{
+    margin-left: 70px;
+}
+.services h3{
+    color: black;
+}
+.parent{
+    margin-top: 50px;
+}
+.footerclass{
+    margin-top: 60px;
+}
+.mainoness{
+    margin-top:0px;
+    padding-top: 20px;
+}
+/* footer.css */

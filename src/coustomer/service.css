@@ -1,0 +1,522 @@
+
+/* Basic page settings */
+* {
+  box-sizing: border-box;
+}
+
+.service-page {
+  min-height: 100vh;
+  background: #f5f9f6;
+  color: #153e35;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.service-header {
+  min-height: 76px;
+  padding: 14px 6%;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #e8efea;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 34px;
+  color: #13845a;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: #647b73;
+  font-size: 12px;
+}
+
+.header-label {
+  background: #e9f5ed;
+  color: #176644;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Hero section */
+.service-hero {
+  padding: 48px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(120deg, #edf8f0, #f8fbf9);
+}
+
+.service-hero > div:first-child {
+  max-width: 540px;
+}
+
+.eyebrow {
+  color: #16815a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.service-hero h1 {
+  margin: 16px 0;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.service-hero h1 span {
+  color: #148557;
+}
+
+.hero-description {
+  color: #60776f;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.trust-quote {
+  flex: 0 1 320px;
+  background: #ffffff;
+  padding: 25px;
+  border: 1px solid #e2eee5;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(26, 72, 48, 0.05);
+}
+
+.quote-mark {
+  color: #18875a;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.trust-quote p {
+  margin: 8px 0 16px;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.trust-quote small {
+  display: block;
+  text-align: right;
+  color: #60776f;
+}
+
+/* Main form card */
+.form-container {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e7eee9;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(25, 64, 43, 0.06);
+}
+
+.form-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.form-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #eaf6ee;
+  color: #147650;
+  border-radius: 12px;
+  font-size: 32px;
+}
+
+.form-heading h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #71857c;
+  font-size: 14px;
+}
+
+/* Form fields */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input:not([type="radio"]),
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6e1db;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #183f34;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #91a099;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #19845a;
+  box-shadow: 0 0 0 3px rgba(25, 132, 90, 0.1);
+}
+
+/* Solar category cards */
+.solar-options {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.solar-option {
+  position: relative;
+  min-height: 125px;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #d9e4dd;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.solar-option:hover,
+.solar-option.selected {
+  border-color: #18845a;
+  background: #f0f8f2;
+}
+
+.solar-option input[type="radio"] {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  accent-color: #168557;
+  cursor: pointer;
+}
+
+.solar-symbol {
+  color: #138257;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.solar-option strong {
+  font-size: 13px;
+}
+
+.solar-option small {
+  color: #778a81;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #087653;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background: #075f43;
+  transform: translateY(-1px);
+}
+
+.privacy-note {
+  margin: 16px 0 0;
+  text-align: center;
+  color: #778a81;
+  font-size: 12px;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #b8e2c6;
+  border-radius: 8px;
+  background: #edf9f0;
+  color: #17643b;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Footer */
+.service-footer {
+  padding: 28px 20px;
+  background: #124b3b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.service-footer h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.service-footer p {
+  margin: 0;
+  color: #d5e9df;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+/* Tablet and mobile screens */
+@media (max-width: 700px) {
+  .service-header {
+    padding: 14px 5%;
+  }
+
+  .service-hero {
+    padding: 32px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+  }
+
+  .trust-quote {
+    flex-basis: auto;
+  }
+
+  .form-container {
+    margin: 20px 12px;
+    padding: 22px 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .solar-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-label {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  .brand h2 {
+    font-size: 19px;
+  }
+
+  .brand-icon {
+    font-size: 27px;
+  }
+
+  .service-hero h1 {
+    font-size: 29px;
+  }
+}
+
+/* ===== Sriram Infra Service Page Fixes ===== */
+
+/* Main page */
+.service-page {
+  width: 100%;
+  min-height: 100vh;
+  color: #153e35 !important;
+  background: #f5f9f6;
+}
+
+/* Fix invisible headings */
+.service-page .brand h2,
+.service-page .form-heading h2 {
+  color: #124b3b !important;
+  text-align: left !important;
+}
+
+.service-page .service-hero h1 {
+  color: #153e35 !important;
+  text-align: left !important;
+}
+
+.service-page .service-hero h1 span {
+  color: #168557 !important;
+}
+
+.service-page .service-hero .eyebrow {
+  color: #168557 !important;
+}
+
+/* Fix hero alignment */
+.service-page .service-hero {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 32px;
+}
+
+.service-page .service-hero > div:first-child {
+  flex: 1;
+  text-align: left !important;
+}
+
+/* Fix form heading and icon alignment */
+.service-page .form-heading {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  gap: 16px;
+  width: 100%;
+  text-align: left !important;
+  margin-bottom: 30px;
+}
+
+.service-page .form-heading .form-icon {
+  flex: 0 0 48px;
+}
+
+.service-page .form-heading h2 {
+  margin: 0 0 8px;
+}
+
+.service-page .form-heading p {
+  color: #647b73 !important;
+  text-align: left !important;
+}
+
+/* Fix labels and input alignment */
+.service-page .form-group > label {
+  display: block !important;
+  width: 100%;
+  color: #153e35 !important;
+  text-align: left !important;
+}
+
+.service-page .form-row {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.service-page .solar-options {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.service-page .solar-option {
+  text-align: center !important;
+}
+
+.service-page .solar-option strong {
+  color: #153e35 !important;
+}
+
+.service-page .solar-option small {
+  color: #647b73 !important;
+}
+
+/* Ensure form fields stay inside the card */
+.service-page .form-container {
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 32px;
+}
+
+.service-page .form-group input:not([type="radio"]),
+.service-page .form-group textarea,
+.service-page .form-group select {
+  width: 100%;
+  color: #153e35 !important;
+  background: #ffffff !important;
+}
+
+/* Mobile responsive fix */
+@media (max-width: 700px) {
+  .service-page .service-hero {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .service-page .service-hero h1 {
+    font-size: 30px;
+  }
+
+  .service-page .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .service-page .solar-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-page .form-container {
+    width: calc(100% - 24px);
+    padding: 20px 16px;
+  }
+}
+

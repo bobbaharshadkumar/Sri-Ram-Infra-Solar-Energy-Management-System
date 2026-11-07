@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+.uare h2{
+    color: black;
+}
+.do h2{
+    color: black;
+}
+.choose h2{
+    color: black;
+}
+.Goal h2{
+    color: black;
+}
+.do{
+    margin-top: 40px;
+}
+.choose{
+    margin-top: 40px;
+}
+.Goal{
+    margin-top: 40px;
+}
+

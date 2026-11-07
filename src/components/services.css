@@ -1,0 +1,128 @@
+
+.services-page {
+    background-color: white;
+    min-height: 100vh;
+    color: #222;
+}
+
+
+/* HERO */
+
+.services-hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: #f5f8f3;
+}
+
+.services-hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.services-hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* SERVICES SECTION */
+
+.services-section {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* CARDS */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 240px;
+    padding: 30px 22px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+
+/* BOTTOM CTA */
+
+.service-bottom {
+    text-align: center;
+    padding: 55px 20px;
+    background: #f5f8f3;
+}
+
+.service-bottom h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.service-bottom p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.service-bottom button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #1f7a3f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.service-bottom button:hover {
+    background: #155c2e;
+}
+.services-hero h1{
+    color: black;
+}
+.services-section h2{
+    color: black;
+}
+.services-page{
+    margin-top: 40px;
+}

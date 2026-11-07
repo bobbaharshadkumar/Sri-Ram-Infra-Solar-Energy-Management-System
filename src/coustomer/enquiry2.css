@@ -1,0 +1,257 @@
+
+/* 1. Default spacing remove cheyyadam */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Full page background */
+.new-enquiry-page {
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #ffffff);
+    color: #263b35;
+}
+
+/* 3. Top navigation bar */
+.enquiry-header {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 5%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Solar Energy logo */
+.solar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #218747;
+}
+
+.enquiry-header nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.enquiry-header nav a {
+    text-decoration: none;
+    color: #344b40;
+    font-size: 15px;
+}
+
+.enquiry-header nav a:hover {
+    color: #218747;
+}
+
+/* 4. Form ni screen center lo pettadam */
+.enquiry-main {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+/* 5. Form background card */
+.enquiry-card {
+    width: 100%;
+    max-width: 750px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* 6. Sun icon */
+.form-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #218747;
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 7. Headings */
+.enquiry-card h1 {
+    color: #218747;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.enquiry-card h2 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.form-description {
+    color: #68786f;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* 8. Input fields arrangement */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+/* Each label and input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Full width fields */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Labels */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #344b40;
+}
+
+/* Input, dropdown and message box */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5e3d9;
+    border-radius: 7px;
+    background-color: #fbfdfb;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+/* Click chesinappudu green border */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #218747;
+    box-shadow: 0 0 0 2px rgba(33, 135, 71, 0.1);
+}
+
+/* Message box */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* 9. Submit button */
+.submit-enquiry {
+    width: 45%;
+    min-width: 200px;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #218747;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-enquiry:hover {
+    background-color: #176b35;
+}
+
+/* 10. Mobile screen */
+@media (max-width: 600px) {
+    .enquiry-header {
+        justify-content: center;
+    }
+
+    .enquiry-header nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .enquiry-main {
+        padding: 20px 12px;
+    }
+
+    .enquiry-card {
+        padding: 25px 18px;
+    }
+
+    .enquiry-card h1 {
+        font-size: 28px;
+    }
+
+    .enquiry-card h2 {
+        font-size: 18px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .submit-enquiry {
+        width: 100%;
+    }
+}
+
+.form-group input[type="tel"] {
+    color: #000 !important;
+    background-color: #fff !important;
+    -webkit-text-fill-color: #000;
+    opacity: 1;
+}
+
+/* Input fields lo type chese text */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    color: #222 !important;
+    -webkit-text-fill-color: #222;
+    background-color: #fff;
+    opacity: 1;
+}
+
+/* Placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777;
+    opacity: 1;
+}
+
+.enquiry-card h2{
+    color: black;
+}
+.form-group select {
+    color: #263b35;
+    background-color: #ffffff;
+}
+
+.form-group select option {
+    color: #263b35;
+    background-color: #ffffff;
+}

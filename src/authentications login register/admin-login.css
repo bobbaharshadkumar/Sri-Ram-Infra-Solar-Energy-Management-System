@@ -1,0 +1,151 @@
+.admin-login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eef2f5;
+
+    padding: 30px;
+}
+
+
+/* Login Box */
+
+.admin-login-box {
+    width: 400px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    border-top: 5px solid #333;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.admin-login-box h1 {
+    margin-bottom: 10px;
+
+    font-size: 32px;
+
+    color: #222;
+}
+
+
+/* Welcome Text */
+
+.admin-login-box p {
+    margin-bottom: 30px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* Labels */
+
+.admin-login-box label {
+    display: block;
+
+    text-align: left;
+
+    margin-bottom: 7px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #333;
+}
+
+
+/* Input Fields */
+
+.admin-login-box input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Input focus */
+
+.admin-login-box input:focus {
+    border-color: #333;
+}
+
+
+/* Button */
+
+.admin-login-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.admin-login-box button:hover {
+    background-color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .admin-login-page {
+        padding: 20px;
+    }
+
+    .admin-login-box {
+        width: 100%;
+
+        padding: 30px 25px;
+    }
+
+    .admin-login-box h1 {
+        font-size: 28px;
+    }
+}

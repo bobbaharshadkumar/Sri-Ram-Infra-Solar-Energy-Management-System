@@ -1,0 +1,10 @@
+.mainone{
+    color: black;
+    display: block;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+}
+.mainone h2{
+    color: black;
+}

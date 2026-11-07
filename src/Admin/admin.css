@@ -1,0 +1,240 @@
+
+
+.ad-shell,
+.ad-shell * {
+    box-sizing: border-box;
+}
+
+.ad-shell {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background: #f5f8f5;
+    color: #24372d;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== SIDEBAR ===== */
+
+.ad-side {
+    width: 245px;
+    min-width: 245px;
+    min-height: 100vh;
+    padding: 30px 16px 20px;
+    background: #ffffff;
+    border-right: 1px solid #e6ece6;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.ad-side h2 {
+    margin: 0;
+    padding: 0 10px;
+    color: #176d3a;
+    font-size: 20px;
+    font-weight: 750;
+    letter-spacing: 0.3px;
+}
+
+.ad-side h3 {
+    margin: 7px 10px 32px;
+    color: #89958c;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* ===== NAVIGATION ===== */
+
+.ad-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ad-nav button {
+    display: block;
+    width: 100%;
+    min-height: 43px;
+    padding: 11px 12px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #536359;
+    text-align: left;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ad-nav button:hover {
+    background: #edf6ef;
+    color: #176d3a;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.ad-main {
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+    padding: 30px;
+    background: #f5f8f5;
+    overflow-x: auto;
+}
+
+/* ===== HEADINGS ===== */
+
+.ad-main h1 {
+    margin: 0 0 8px;
+    color: #20382b;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.ad-main h2 {
+    color: #263b2f;
+    font-size: 19px;
+    font-weight: 650;
+}
+
+.ad-main h3 {
+    color: #344b3b;
+}
+
+/* ===== CARDS ===== */
+
+.ad-main .card,
+.ad-main .stat-card,
+.ad-main .dashboard-card {
+    background: #ffffff;
+    border: 1px solid #e7eee7;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(36, 70, 43, 0.035);
+}
+
+/* ===== FORM ELEMENTS ===== */
+
+.ad-main input,
+.ad-main select,
+.ad-main textarea {
+    max-width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #dce6dd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #263b2f;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.ad-main input:focus,
+.ad-main select:focus,
+.ad-main textarea:focus {
+    border-color: #249653;
+    box-shadow: 0 0 0 3px rgba(36, 150, 83, 0.09);
+}
+
+/* ===== CONTENT BUTTONS ===== */
+
+.ad-main button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ===== TABLES ===== */
+
+.ad-main table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.ad-main th {
+    padding: 13px 12px;
+    background: #f0f6f1;
+    color: #526457;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ad-main td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #edf1ed;
+    color: #526157;
+    font-size: 13px;
+}
+
+.ad-main tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 900px) {
+    .ad-side {
+        width: 215px;
+        min-width: 215px;
+        padding: 25px 12px;
+    }
+
+    .ad-side h2 {
+        font-size: 17px;
+    }
+
+    .ad-nav button {
+        font-size: 11.5px;
+    }
+
+    .ad-main {
+        padding: 22px 18px;
+    }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+    .ad-shell {
+        flex-direction: column;
+    }
+
+    .ad-side {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding: 18px 14px;
+        border-right: none;
+        border-bottom: 1px solid #e6ece6;
+    }
+
+    .ad-side h3 {
+        margin-bottom: 18px;
+    }
+
+    .ad-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .ad-nav button {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .ad-main {
+        min-height: auto;
+        padding: 20px 14px;
+    }
+
+    .ad-main h1 {
+        font-size: 22px;
+    }
+}
+

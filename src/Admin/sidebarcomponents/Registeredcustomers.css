@@ -1,0 +1,116 @@
+
+/* Main page */
+.registered-customers-page {
+    min-height: 100vh;
+    padding: 32px;
+    background-color: #f5f7fb;
+    color: #263449;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Page heading */
+.registered-customers-page h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 10px;
+}
+
+/* Total users */
+.registered-customers-page p {
+    display: inline-block;
+    margin: 0 0 24px;
+    padding: 12px 18px;
+    background-color: #e8f5ec;
+    color: #237544;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Table container */
+.registered-customers-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Table headings */
+.registered-customers-page thead {
+    background-color: #eaf0f7;
+}
+
+.registered-customers-page th {
+    padding: 17px 20px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #dfe6ee;
+}
+
+/* Table data */
+.registered-customers-page td {
+    padding: 17px 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #475569;
+    border-bottom: 1px solid #edf0f4;
+}
+
+/* Customer name */
+.registered-customers-page td:nth-child(2) {
+    font-weight: 600;
+    color: #263449;
+}
+
+/* Customer type */
+.registered-customers-page td:nth-child(3) {
+    text-transform: capitalize;
+}
+
+/* Row hover */
+.registered-customers-page tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.registered-customers-page tbody tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Last row */
+.registered-customers-page tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Empty table message */
+.registered-customers-page td[colspan="4"] {
+    text-align: center;
+    padding: 30px;
+    color: #8490a2;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .registered-customers-page {
+        padding: 18px;
+    }
+
+    .registered-customers-page table {
+        min-width: 600px;
+    }
+
+    .registered-customers-page {
+        overflow-x: auto;
+    }
+
+    .registered-customers-page h2 {
+        font-size: 22px;
+    }
+}

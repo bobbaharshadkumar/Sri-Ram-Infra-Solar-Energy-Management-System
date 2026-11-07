@@ -1,0 +1,321 @@
+
+/* Main container */
+.sr-service-container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 32px;
+  background-color: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #263b59;
+}
+
+/* Heading section */
+.sr-service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+/* Main heading */
+.sr-service-title {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #183654;
+}
+
+/* Description */
+.sr-service-subtitle {
+  margin: 0;
+  font-size: 16px;
+  color: #718096;
+  line-height: 1.5;
+}
+
+/* Total requests box */
+.sr-service-count {
+  padding: 20px 24px;
+  background-color: #e6f7ec;
+  color: #13783d;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Table outer container */
+.sr-service-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border: 1px solid #e0e7f0;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(28, 52, 84, 0.05);
+}
+
+/* Table */
+.sr-service-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Table heading background */
+.sr-service-table .sr-service-thead {
+  background-color: #edf3fb;
+}
+
+/* Heading cells */
+.sr-service-table th {
+  padding: 23px 20px;
+  color: #233b5b;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: 1px solid #d8e2f0;
+}
+
+/* Table data cells */
+.sr-service-table td {
+  padding: 21px 20px;
+  font-size: 14px;
+  color: #526784;
+  border-bottom: 1px solid #e9eef5;
+  white-space: nowrap;
+}
+
+/* Alternate row background */
+.sr-service-table tbody tr:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+/* Row hover effect */
+.sr-service-table tbody tr:hover {
+  background-color: #f0f6fc;
+}
+
+/* Customer name */
+.sr-service-table .sr-service-name {
+  color: #183654;
+  font-weight: 700;
+}
+
+/* Status badge */
+.sr-service-status {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 25px;
+  background-color: #fff2d5;
+  color: #946200;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sr-service-container {
+    padding: 20px 14px;
+  }
+
+  .sr-service-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .sr-service-title {
+    font-size: 24px;
+  }
+
+  .sr-service-subtitle {
+    font-size: 14px;
+  }
+
+  .sr-service-count {
+    padding: 14px 18px;
+  }
+}
+
+/* Complete Consultation Button */
+.consulatationbutton {
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover Effect */
+.consulatationbutton:hover:not(:disabled) {
+  background-color: #146c43;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(25, 135, 84, 0.2);
+}
+
+/* Click Effect */
+.consulatationbutton:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* Completed Button */
+.consulatationbutton:disabled {
+  background-color: #e2f3e8;
+  color: #198754;
+  border: 1px solid #b8e2c8;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.project-progress-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  box-sizing: border-box;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #263b59;
+}
+
+.project-progress-heading {
+  margin-bottom: 24px;
+}
+
+.project-progress-heading h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+  color: #075b46;
+}
+
+.project-progress-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+/* Compact form card */
+.project-progress-card {
+  max-width: 720px;
+  padding: 26px;
+  background: white;
+  border: 1px solid #e0e9e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(28, 52, 84, 0.05);
+}
+
+.project-progress-card-heading {
+  margin-bottom: 24px;
+}
+
+.project-progress-card-heading h3 {
+  margin: 0 0 7px;
+  font-size: 20px;
+  color: #075b46;
+}
+
+.project-progress-card-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+/* Form fields */
+.project-progress-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-progress-field label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.project-progress-field select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5e0e9;
+  border-radius: 6px;
+  background: white;
+  color: #263b59;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.project-progress-field select:focus {
+  border-color: #198754;
+}
+
+/* Hide the large available stages section */
+.project-progress-stages {
+  display: none;
+}
+
+/* Update button */
+.project-progress-button {
+  padding: 12px 22px;
+  background: #087747;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.project-progress-button:hover {
+  background: #065d38;
+}
+
+@media (max-width: 768px) {
+  .project-progress-container {
+    padding: 20px 14px;
+  }
+
+  .project-progress-card {
+    padding: 20px 16px;
+  }
+
+  .project-progress-heading h2 {
+    font-size: 23px;
+  }
+}
+
+.project-progress-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 28px;
+  box-sizing: border-box;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #263b59;
+}
+
+.project-progress-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.project-progress-card {
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+  padding: 26px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e0e9e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(28, 52, 84, 0.05);
+}
+

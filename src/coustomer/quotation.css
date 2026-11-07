@@ -1,0 +1,352 @@
+.solar-page {
+  font-family: Arial, sans-serif;
+  background-color: #f7fbf9;
+  padding: 25px;
+  color: #17352c;
+}
+
+.solar-header {
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  border-bottom: 2px solid #e0eee6;
+}
+
+.solar-header h2 {
+  color: #087443;
+  margin-bottom: 5px;
+}
+
+.solar-header p {
+  margin-top: 0;
+  color: #66756e;
+}
+
+.solar-heading {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.solar-heading h1 {
+  color: #123b30;
+  font-size: 30px;
+}
+
+.solar-heading p {
+  color: #60736a;
+}
+
+.solar-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.solar-card {
+  flex: 1;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #dce9e1;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.household {
+  border-top: 5px solid #15945a;
+}
+
+.industrial {
+  border-top: 5px solid #2867c7;
+}
+
+.large-scale {
+  border-top: 5px solid #8144b5;
+}
+
+.solar-card h2 {
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+.household h2,
+.household h3 {
+  color: #087443;
+}
+
+.industrial h2,
+.industrial h3 {
+  color: #2459a8;
+}
+
+.large-scale h2,
+.large-scale h3 {
+  color: #713a9f;
+}
+
+.solar-card h3 {
+  background-color: #f1f7f3;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.price-table {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #e8eee9;
+  font-size: 13px;
+}
+
+.price-row span:first-child {
+  font-weight: 500;
+}
+
+.price-header {
+  background-color: #e8f4ec;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.price-row span:last-child {
+  text-align: right;
+}
+
+.note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #66756e;
+  margin: 18px 0;
+}
+
+.solar-card button {
+  width: 100%;
+  padding: 12px 8px;
+  background-color: #087443;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.industrial button {
+  background-color: #2867c7;
+}
+
+.large-scale button {
+  background-color: #713a9f;
+}
+
+.solar-card button:hover {
+  opacity: 0.85;
+}
+
+.solar-footer {
+  margin-top: 25px;
+  padding: 25px;
+  text-align: center;
+  background-color: #104a35;
+  color: white;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+
+.solar-footer h3 {
+  color: #9ef0b6;
+}
+
+/* Mobile screen */
+@media (max-width: 900px) {
+  .solar-container {
+    flex-direction: column;
+  }
+
+  .solar-card {
+    width: auto;
+  }
+
+  .solar-heading h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solar-page {
+    padding: 10px;
+  }
+
+  .solar-card {
+    padding: 12px;
+  }
+
+  .price-row {
+    font-size: 11px;
+    gap: 5px;
+  }
+
+  .solar-card h2 {
+    font-size: 18px;
+  }
+
+  .solar-footer {
+    padding: 16px;
+  }
+}
+
+/* Website header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  background: #ffffff;
+  border-bottom: 1px solid #dce9e1;
+  margin-bottom: 25px;
+}
+
+.site-logo h2 {
+  margin: 0;
+  color: #087443;
+  font-size: 25px;
+}
+
+.site-logo p {
+  margin: 5px 0 0;
+  color: #52665b;
+  font-size: 14px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: #17352c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: #087443;
+}
+
+/* Improve quotation card readability */
+.solar-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.solar-card {
+  width: auto;
+  min-width: 0;
+  padding: 22px;
+  overflow-wrap: anywhere;
+  box-sizing: border-box;
+}
+
+.solar-card h2 {
+  line-height: 1.4;
+}
+
+.solar-card > p:not(.note) {
+  line-height: 1.6;
+}
+
+.price-row {
+  display: grid;
+  grid-template-columns: minmax(65px, 0.8fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: 10px;
+  padding: 14px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.price-row span:last-child {
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.price-header {
+  font-size: 13px;
+}
+
+.solar-card button {
+  margin-top: 8px;
+  padding: 13px 10px;
+  line-height: 1.4;
+}
+
+.solar-footer {
+  background: #104a35;
+  padding: 30px 20px;
+}
+
+.solar-footer h2,
+.solar-footer p {
+  color: #ffffff !important;
+  line-height: 1.7;
+}
+
+.solar-footer h3 {
+  color: #9ef0b6 !important;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .solar-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 18px 12px;
+  }
+
+  .site-nav {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .solar-container {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-page {
+    padding: 12px;
+  }
+
+  .solar-card {
+    padding: 16px;
+  }
+
+  .solar-heading h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .price-row {
+    font-size: 13px;
+    padding: 12px 5px;
+  }
+
+  .solar-footer {
+    padding: 22px 14px;
+  }
+}
